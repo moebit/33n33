@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">33n33</string>
+    <string name="first_string">33n33</string>
+    <string name="button_1_text">Stop</string>
+    <string name="button_2_text">Start</string>
+    <string name="outputfilename">Filename:</string>
+    <string name="emptyFilename">Filename cannot be empty! Please enter a name!</string>
+    <string name="ok">Okay</string>
+    <string name="emptyFilenameTitle">Empty Filename Error</string>
+    <string name="filenamehint">Will be saved with this name</string>
+    <string name="chkbox_accelerometer">Accelerometer</string>
+    <string name="chkbox_ambienttemp">Ambient Temperature</string>
+    <string name="chkbox_gravity">Gravity</string>
+    <string name="chkbox_gyroscope">Gyroscope</string>
+    <string name="chkbox_light">Light</string>
+    <string name="chkbox_linearacceleration">Linear Acceleration</string>
+    <string name="chkbox_magneticfield">Magnetic Field</string>
+    <string name="chkbox_pressure">Pressure</string>
+    <string name="chkbox_proximity">Proximity</string>
+    <string name="chkbox_relativehumidity">Relative Humidity</string>
+    <string name="chkbox_rotationvector">Rotation Vector</string>
+</resources>
