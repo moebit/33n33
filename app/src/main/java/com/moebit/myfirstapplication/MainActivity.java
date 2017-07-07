@@ -109,11 +109,11 @@ public class MainActivity extends AppCompatActivity {
                         path = (Environment.MEDIA_MOUNTED.equals(Environment.getExternalStorageState())) ? Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS) : getFilesDir();
                         File filename = new File(path, outputFilename.getText().toString() + ".csv");
                         bufferedWriter = new BufferedWriter(new FileWriter(filename));
-                        Log.d("Debug", "Path: " + filename.toString());
+                        //Log.d("Debug", "Path: " + filename.toString());
                         for (Sensor sensor : availableSensors) {
                             //TODO: check difference between 0 and sensorManager.SENSOR_DELAY_NORMAL)
                             sensorManager.registerListener(sensorEventListener, sensor, SensorManager.SENSOR_DELAY_NORMAL);
-                            Log.d("Debug", sensor.getName() + " is registered!");
+                            //Log.d("Debug", sensor.getName() + " is registered!");
                         }
                         mainPageTextView.setText("Start 3n3ing ... ");
                     } catch (Exception e) {
@@ -151,7 +151,7 @@ public class MainActivity extends AppCompatActivity {
         public void onSensorChanged(SensorEvent sensorEvent) {
             //long timestamp = sensorEvent.timestamp;
             //float value = sensorEvent.values[0];
-            Log.d("Debug", "onSensorChanged() is running");
+            //Log.d("Debug", "onSensorChanged() is running");
             writeSensorData(sensorEvent.sensor.getName(), Long.toString(sensorEvent.timestamp), sensorEvent.values);
         }
 
@@ -170,7 +170,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 line = key + ":" + timestamp + ":" + line + "\n";
                 try {
-                    Log.d("DATA", line);
+                    //Log.d("DATA", line);
                     bufferedWriter.write(line);
                 } catch (Exception e) {
                     e.printStackTrace();
